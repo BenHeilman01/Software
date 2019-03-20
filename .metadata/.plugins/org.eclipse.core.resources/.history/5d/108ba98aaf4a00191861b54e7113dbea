@@ -1,0 +1,16 @@
+package inClassDemos;
+
+public class StudentApp {
+
+	public static void main(String[] args) {
+	
+		Student student = new Student();
+		student.setFirstName("Ben");
+		student.setLastName("Heilman");
+		student.setEmail("ben_heilman@yahoo.com");
+		student.setAge("37");
+		student.setGpa("3.5");
+		student.setAddress("943 Nana, Des Peres, MO, 63131");
+	}
+
+}

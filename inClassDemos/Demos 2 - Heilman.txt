@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+public class Positive {
+
+		public static void main(String[] args) {
+			
+			Scanner keyboard = new Scanner(System.in);
+			System.out.println("Enter whole number: ");
+			int number = keyboard.nextInt();
+				
+			System.out.print(number);
+			
+			if (number > 0 ) {
+				System.out.print(" is Positive");
+			}
+			else if (number < 0) {
+				System.out.print(" is Negative");
+			}
+
+		}
+
+	}
+
+
+
+
+import java.util.Scanner;
+
+public class OddEven {
+
+	public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Enter whole number: ");
+		int number = keyboard.nextInt();
+			
+		System.out.print(number);
+		
+		if (number % 2 == 0) {
+			System.out.print(" is Even");
+		}
+		else {
+			System.out.println(" is Odd");
+	}
+
+	}
+}
+
+
+
+import java.util.Scanner;
+
+public class Grades {public static void main(String[] args) {
+	
+	Scanner keyboard = new Scanner(System.in);
+	System.out.println("Enter whole number: ");
+	int number = keyboard.nextInt();
+	
+	if (number > 89) {
+		System.out.println("Grade: A");
+	}
+	else if (number > 79 && number < 90) {
+		System.out.println("Grade: B");
+	}
+	else if (number > 71 && number < 80) {
+		System.out.println("Grade: C");
+	}
+	else if (number > 63 && number < 72) {
+		System.out.println("Grade: D");
+	}
+	else if (number > 0 && number < 64) {
+			System.out.println("Grade: F"); {
+		}
+}
+}
+}
+
+
+
+
+
+public class Days {public static void main(String[] args) {
+
+	Scanner keyboard = new Scanner(System.in);
+	System.out.println("Enter whole number: ");
+	int number = keyboard.nextInt();
+	
+	if (number == 1) {
+		System.out.println("Sunday");
+	}
+	else if (number == 2) {
+		System.out.println("Monday");
+	}
+	else if (number == 3) {
+		System.out.println("Tuesday");
+	}
+	else if (number == 4) {
+		System.out.println("Wednesday");
+	}
+	else if (number == 5) {
+		System.out.println("Thursday");
+	}
+	else if (number == 6) {
+		System.out.println("Friday");
+	}
+	else if (number == 7) {
+		System.out.println("Saturday");
+	}
+	else 
+		System.out.println("Please enter a whole number between 1 - 7");
+				}
+{
+			{
+		}
+}
+}

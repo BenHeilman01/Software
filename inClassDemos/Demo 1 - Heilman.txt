@@ -1,0 +1,72 @@
+
+public class Students {
+
+	public static void main(String[] args) {
+		
+		//Variables
+		int numBoys = 11;
+		int numGirls = 16;
+		int numberOfElements = 2;
+		int sum = numBoys + numGirls;		
+		double percentOfGirls = ((double) (numGirls) / (sum));
+		
+		//Cast integer to double
+		
+		
+		double realaverage = ((double) (sum) / (numberOfElements));
+		
+		System.out.println(percentOfGirls +  "% of the class are girls");		
+		System.out.println("The Student-Teach ratio is " + realaverage);
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+public class Stock {
+
+	public static void main(String[] args) {
+
+		int savings = 25000;
+		int stockPrice = 989;
+		int numberOfShares = ((savings) / (stockPrice));
+		double moneyLeft = ((double) (stockPrice) * (numberOfShares));
+		double moneyCd = ((double) (savings) - (moneyLeft));
+		
+		System.out.println("Buy " + (numberOfShares) + " shares of stock");
+		System.out.println("Invest $" + moneyCd + " in CD account");
+		
+	}
+
+}
+
+
+
+
+public class Hard1 {
+
+	public static void main(String[] args) {
+
+		int secs = 7724;
+		int mins = secs / 60; 
+		int hours = mins / 60;
+		int minsran = hours * 60;
+		int leftovermins = mins - minsran;
+		int leftoversecs = mins * 60;
+		int realleftoversecs = secs - leftoversecs; 
+		
+		
+	System.out.println((hours) + "hrs:" + (leftovermins) + "mins:" + (realleftoversecs) + "secs");
+
+	
+	
+	
+	}
+
+
+}

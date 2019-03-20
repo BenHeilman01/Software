@@ -1,0 +1,21 @@
+package claim;
+
+public class Student extends Person {
+	
+	public Student() {
+		this.firstName = "Ben";
+		this.lastName = "Heilman";
+	}
+
+	@Override
+	public double taxes(double amount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+	}
+	
+
+ //	protected String firstName;
+//protected String lastName;

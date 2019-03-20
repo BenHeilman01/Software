@@ -1,0 +1,44 @@
+package com.claim;
+//Create a new class called Application => add the main method to this class => add 
+//Package => com.claim.
+public class Student {
+// Right click on package com.claim => new class => Student.
+
+//4. Add instance variables => private String firstName; private String lastName;
+	private String firstName;
+	private String lastName;
+	private String age;
+//5. Add a default constructor public Student() {}
+	public Student() {}
+//6. Add a parameterized constructor 
+	public Student (String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		
+	}
+//7. Add getters / setters : 
+	public String getFirstName() {
+		return this.firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return this.lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getAge() {
+		return this.age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+//8. In the application class inside main create a new Student object.
+
+//9. Print student2 name :
+	
+//10. Call the set method for student1 and add firstName and lastName;
+	
+}

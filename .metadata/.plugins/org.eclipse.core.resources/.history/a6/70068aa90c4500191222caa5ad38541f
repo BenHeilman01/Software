@@ -1,0 +1,30 @@
+package libraryPackage;
+
+public class LibraryApplication {
+
+	public static void main(String[] args) {
+//Create a libraryMain and a LibraryBranch w/no values
+	LibraryDataStorage libraryMain = new LibraryDataStorage();
+//Create a book
+	BookDataBase book1 = new BookDataBase();
+	
+//"getting' our variable, 'setAddress' and etc by calling our object with . 
+	
+	libraryMain.setAddress("101 MainStreet - St. Louis, MO 63131");
+	libraryMain.setNumberOfBooks("532,643");
+	libraryMain.setNumberOfStaff("23");
+	libraryMain.setCostOfUpkeep("$1,589,521");
+//Creating book variables/attrubutes
+	book1.setAuthor("Edgar Allan Poe");
+	book1.setTitle("The Raven");
+	book1.setNumberOfPages(56);
+//Print info
+	System.out.println("Headquarters is located at: " + libraryMain.getAddress());
+	System.out.println("It houses " + libraryMain.getNumberOfBooks() + " books");
+	System.out.println("There are a total of " + libraryMain.getNumberOfStaff() + " part-time and full-time staff employed here" );
+	System.out.println("The total upkeep per year is: " + libraryMain.getCostOfUpkeep());
+	System.out.println("It include the book " + book1.getTitle() + " by " + "Edgar Allan Poe" + );
+	System.out.print(" and has " + book1.getNumberOfPages());
+	}
+
+}

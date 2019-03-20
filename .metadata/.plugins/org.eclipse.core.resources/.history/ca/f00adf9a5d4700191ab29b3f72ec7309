@@ -1,0 +1,14 @@
+package phoneBook;
+
+
+public class OGList {
+	
+//defult constructor 
+	OGList oGList = new OGList();
+	
+
+	
+/*	Person[] personList1=new Person[personList.length +1];
+	for (int i = 0; i<personList.length; i++) {
+	personList1[i] = personList[i];*/
+}

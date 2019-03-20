@@ -1,0 +1,10 @@
+package claim;
+
+public class Employee extends Person {
+	public Employee() {
+	this.make = "Employee";
+	this.model = "Employee whatever"
+	
+	}
+
+}

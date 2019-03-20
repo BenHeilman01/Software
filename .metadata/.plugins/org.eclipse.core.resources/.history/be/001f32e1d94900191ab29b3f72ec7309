@@ -1,0 +1,17 @@
+package inClassDemos;
+import java.util.Scanner;
+
+public class ValidateAge {
+	
+	public static void main(String)[] args){
+		
+	}
+
+	public static void validateAge() {
+		Scanner scanner = new Scanner(System.in);
+		String inputValue = scanner.next();
+		
+		int age = Integer.parseInt(inputValue);
+	}
+	
+}

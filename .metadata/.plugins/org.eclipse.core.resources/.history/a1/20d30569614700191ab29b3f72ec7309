@@ -1,0 +1,19 @@
+package phoneBook;
+
+
+public class OGList {
+	
+//defult constructor 
+	OGList oGList = new OGList();
+	
+//Methods
+//1. To Add a person to the list
+	
+	Person[] newList = new Customer[OGList.length + 1];{
+
+	
+/*	Person[] personList1=new Person[personList.length +1];
+	for (int i = 0; i<personList.length; i++) {
+	personList1[i] = personList[i];*/
+}
+}

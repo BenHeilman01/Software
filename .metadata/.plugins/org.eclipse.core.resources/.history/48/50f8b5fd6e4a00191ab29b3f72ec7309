@@ -1,0 +1,172 @@
+package phoneBook;
+
+import java.util.Scanner;
+
+
+
+public class PHApplication {
+
+	static Person[] oGList = new Person[0];
+	
+	
+	public static void main(String[] args) {
+
+//Base list of customers for Phone book
+		Boolean altF4 = false;
+
+		 
+		do{
+			
+		
+	{
+// My print out screen.
+			System.out.println("Please enter the number of the action you would like to perform: ");
+			System.out.println("1. Add a new record");
+			System.out.println("2. Delete a current record");
+			System.out.println("3. Search Phone Book for record by first name");
+			System.out.println("4. Search Phone Book for record by last name");
+			System.out.println("5. Search Phone Book for record by complete full name");
+			System.out.println("6. Search Phone Book fo r record by telephone number");
+			System.out.println("7. Search Phone Book for record by city");
+			System.out.println("8. Search Phone Book for record by state");
+			System.out.println("9. To exit program");  
+		}
+//Request input from user
+	{		Scanner keyboard = new Scanner(System.in);
+			int number = keyboard.nextInt();
+			
+			switch(number) {
+			case 1:
+				 System.out.println("Please enter record you would like to add in this format: ");
+				 System.out.println("John E Doe, 324 Main St, St Charles, MO, 63303, 8475390126");
+			keyboard.nextLine();		
+			String newRecord = keyboard.nextLine();
+			oGList =entryRecord(newRecord, newRecord);
+				break;
+			case 2:
+				break;
+			case 3:
+				System.out.println("Please enter record you would like to search by:");
+				keyboard.nextLine();		
+				String searchFirstName = keyboard.nextLine();
+				searchByFirstName(searchFirstName);
+				break;
+			case 4:
+				System.out.println("Please enter record you would like to search by:");
+				keyboard.nextLine();		
+				String searchLastName = keyboard.nextLine();
+				searchByLastName(searchLastName);
+				System.out.println("4");
+				break;
+			case 5:
+				System.out.println("5");
+				break;
+			case 6:
+				System.out.println("Please enter record you would like to search by:");
+				keyboard.nextLine();		
+				String searchTelephone = keyboard.nextLine();
+				searchByTelephone(searchTelephone);
+				
+				break;
+			case 7:
+				System.out.println("7");
+				break;
+			case 8:
+				System.out.println("8");
+				break;
+			case 9:
+				while(altF4);
+				break;
+			
+			default:
+				System.out.println("Please enter a number 1-9");
+				break;
+			
+			}
+				
+	    }
+		}while(!altF4);
+
+		
+}//---------------------------end of main method
+	private static void searchByTelephone(String searchTelephone) {
+		for (int i=0;i < oGList.length;i++) {
+			if(oGList[i].getPhoneNumber().equals(searchTelephone)) {
+				System.out.println("Person Found!!! ");
+				System.out.println(oGList[i]); 
+				
+			}
+			else {
+			 System.out.println("Person not found");
+			}
+			}
+	}
+	private static void searchByLastName(String searchLastName) {
+		for (int i=0;i < oGList.length;i++) {
+			if(oGList[i].getLastName().equals(searchLastName)) {
+				System.out.println("Person Found!!! ");
+				System.out.println(oGList[i]);
+				
+			}
+			else { 
+			 System.out.println("Person not found");
+			}
+			}
+			
+	}
+	private static void searchByFirstName(String searchFirstName) {
+		for(int i=0;i < oGList.length;i++)
+		{
+			if(oGList[i].getFirstName().equals(searchFirstName))
+			{
+				System.out.println("Person Found!!!  ");
+				System.out.println(oGList[i]);
+			}
+		}
+		
+	}
+	public static Person[] entryRecord(String newRecord, String newRecord2){
+		//System.out.println("we are here");
+		//new record aaray made by spliting inputs by ' , ' 
+		String[] custList = newRecord.split(",");
+		//new record aray made by splitting by space ' ' 
+		String[] nameCustList = newRecord.split(" ");
+		//create temp person to fit into 2nd array, nameCustList
+		
+		Person tempPerson = new Person();
+//		for (int c = 0;c<=nameCustList.length; c++)
+		if (nameCustList.length == 2) {
+		tempPerson.setFirstName(nameCustList[0]);
+		tempPerson.setLastName(nameCustList[1]);}			
+		else { 
+		tempPerson.setFirstName(nameCustList[0]);
+		tempPerson.setLastName(nameCustList[2]);
+		tempPerson.setMiddleName(nameCustList[1]);
+		}
+		
+		//temp person to fit into array 
+		
+		tempPerson.setAddress(new Address(custList[1],custList[2],custList[3],custList[4]));
+		tempPerson.setPhoneNumber(custList[5]);
+		
+		//put tempPerson into nameCustList
+		
+		
+		Person[] finalList =new Person[oGList.length +1];
+		for (int i = 0; i<oGList.length; i++) {
+			finalList[i] = oGList[i];
+		}
+		finalList[finalList.length-1] = tempPerson;
+		
+
+ 			for (int i = 0; i < finalList.length; i++) {
+				//system print out for cust1	
+			//System.out.println(finalList[i]);
+			//System.out.println(finalList[0] + " was added.");
+			
+		}
+ 			return finalList;
+	}
+	
+	}//-----------------------end of class
+

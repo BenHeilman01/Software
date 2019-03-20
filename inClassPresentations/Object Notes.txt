@@ -1,0 +1,20 @@
+
+Class -
+Variables of the Object    Data Field
+
+Constructors:
+Must contain the exact name of the class
+Different args w/different data field
+Do NOT have return type.  Can be public or private.
+MUST use the word NEW (it is creating somthing)
+
+Method
+Anything that has an action  
+Has the return
+does the final calculator
+
+
+Acesses The Object
+
+className.getArea
+The '.' gives you access to formala inside the object. 

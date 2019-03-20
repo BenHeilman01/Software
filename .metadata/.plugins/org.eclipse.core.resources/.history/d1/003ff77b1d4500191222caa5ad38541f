@@ -1,0 +1,18 @@
+package libraryPackage;
+
+// Data storage for Books
+public class BranchDataBase {
+// Add instances variables
+	private String address;
+	private int numberOfBooks;
+	private int numberOfStaff;
+	private int costOfUpkeep;
+	
+//Add a default constructor
+	
+	public BranchDataBase() {}
+	
+//Add a parameterized construtor
+	
+	public BranchDataBase (String address, String numberOfBooks, String number)
+}

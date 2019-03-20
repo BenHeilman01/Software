@@ -1,0 +1,50 @@
+package libraryPackage;
+
+// Data storage for libraryPackage
+public class LibraryDataStorage {
+//Add instance variables
+	private String address;
+	private String numberOfBooks;
+	private String numberOfStaff;
+	private String costOfUpkeep;
+	
+//Add a default constructor
+	
+	public LibraryDataStorage() {}
+
+//Add a parameterized constructor
+	
+	public LibraryDataStorage (String address, String numberOfBooks, String numberOfStaff, String costOfUpkeep) {
+		this.address = address;
+		this.numberOfBooks = numberOfBooks;
+		this.numberOfStaff = numberOfStaff;
+		this.costOfUpkeep = costOfUpkeep;
+	}
+
+//Add getters / setters:
+	public String getAddress() {
+		return this.address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getNumberOfBooks() {
+		return this.numberOfBooks;
+	}
+	public void setNumberOfBooks(String numberOfBooks) {
+		this.numberOfBooks = numberOfBooks;
+	}
+	public String getNumberOfStaff() {
+		return this.numberOfStaff;
+	}
+	public void setNumberOfStaff(String numberOfStaff) {
+		this.numberOfStaff = numberOfStaff;
+	}
+	public String getCostOfUpkeep() {
+		return this.costOfUpkeep;
+	}
+	public void setCostOfUpkeep(String costOfUpkeep) {
+		this.costOfUpkeep = costOfUpkeep;
+	}
+}
+

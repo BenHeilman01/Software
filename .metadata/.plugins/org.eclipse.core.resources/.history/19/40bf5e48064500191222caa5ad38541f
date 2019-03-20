@@ -1,0 +1,21 @@
+package libraryPackage;
+
+public class LibraryApplication {
+
+	public static void main(String[] args) {
+//Create a libraryMain and a LibraryBranch w/no values
+	LibraryDataStorage libraryMain = new LibraryDataStorage();
+	
+//"getting' our variable, 'setAddress' and etc by calling our object with . 
+	
+	libraryMain.setAddress("101 MainStreet - St. Louis, MO 63131");
+	libraryMain.setNumberOfBooks("532,643");
+	libraryMain.getNumberOfStaff("23");
+//Print info
+	System.out.println("Headquarters is located at: " + libraryMain.getAddress());
+	System.out.println("It houses " + libraryMain.getNumberOfBooks() + " books");
+	System.out.println("There are a total " + libraryMain.getNumberOfStaff() + " part-time and full-time staff employed here" );
+	
+	}
+
+}

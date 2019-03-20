@@ -1,0 +1,8 @@
+package libraryPackage;
+
+import java.util.Date;
+
+public class BookLog {
+
+private Date checkOutDate
+}
